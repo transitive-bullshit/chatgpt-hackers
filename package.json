@@ -21,30 +21,35 @@
     "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check"
   },
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@types/node": "18.15.3",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "@vercel/analytics": "^0.1.11",
     "clsx": "^1.2.1",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
     "framer-motion": "^10.4.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.2.0",
     "next": "13.2.4",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.20",
-    "postcss-import": "^15.1.0",
-    "prettier": "^2.8.4",
     "random": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-use": "^17.4.0",
-    "tailwindcss": "^3.2.4",
     "three": "^0.150.1",
-    "typescript": "4.9.5",
     "unstated-next": "^1.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@types/three": "^0.149.0",
+    "@vercel/analytics": "^0.1.11",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.20",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.5",
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -68,10 +73,5 @@
     "bot",
     "oss",
     "open source"
-  ],
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/three": "^0.149.0",
-    "autoprefixer": "^10.4.14"
-  }
+  ]
 }
