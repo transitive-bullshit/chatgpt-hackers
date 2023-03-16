@@ -9,7 +9,9 @@
 
 ## Intro
 
-This is the source of the [ChatGPT Hackers community website](https://chatgpthackers.dev). Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI!
+This is the source of the [ChatGPT Hackers community website](https://chatgpthackers.dev).
+
+Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI!
 
 ## License
 
