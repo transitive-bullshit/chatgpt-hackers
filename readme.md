@@ -1,4 +1,4 @@
-# ChatGPT API <!-- omit in toc -->
+# ChatGPT Hackers Community <!-- omit in toc -->
 
 > Website for the [ChatGPT Hackers community](https://chatgpthackers.dev).
 
