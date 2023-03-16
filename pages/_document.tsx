@@ -6,6 +6,8 @@ export default function Document() {
     <Html lang='en' dir='ltr' className='dark'>
       <Head>
         <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/icon.png' />
+        <link rel='icon' type='image/svg+xml' href='/icon.svg' />
       </Head>
 
       <body>
