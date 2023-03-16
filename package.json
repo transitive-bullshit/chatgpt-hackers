@@ -5,7 +5,7 @@
   "description": "Website for the ChatGPT Hackers community.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "repository": "transitive-bullshit/chatgpt-hackers",
-  "homepage": "https://chatgpthackers.dev",
+  "homepage": "https://www.chatgpthackers.dev",
   "license": "MIT",
   "engines": {
     "node": ">=16"

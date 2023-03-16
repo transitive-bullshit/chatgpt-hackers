@@ -1,6 +1,6 @@
 # ChatGPT Hackers Community <!-- omit in toc -->
 
-> Website for the [ChatGPT Hackers community](https://chatgpthackers.dev).
+> Website for the [ChatGPT Hackers community](https://www.chatgpthackers.dev).
 
 [![Build Status](https://github.com/transitive-bullshit/chatgpt-hackers/actions/workflows/test.yml/badge.svg)](https://github.com/transitive-bullshit/chatgpt-hackers/actions/workflows/test.yml) [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/transitive-bullshit/chatgpt-hackers/blob/main/license) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
@@ -9,7 +9,7 @@
 
 ## Intro
 
-This is the source of the [ChatGPT Hackers community website](https://chatgpthackers.dev).
+This is the source of the [ChatGPT Hackers community website](https://www.chatgpthackers.dev).
 
 Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI!
 
