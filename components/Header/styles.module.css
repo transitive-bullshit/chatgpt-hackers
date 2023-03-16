@@ -117,8 +117,8 @@
 }
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   :global(.dark) .header {
     background: hsla(203, 8%, 20%, 0.8);
   }
-}
+} */
