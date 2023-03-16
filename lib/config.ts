@@ -7,7 +7,7 @@ export const isSafari =
 export const title = 'ChatGPT Hackers'
 export const description =
   'Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI!'
-export const domain = 'chatgpthackers.dev'
+export const domain = 'www.chatgpthackers.dev'
 
 export const author = 'Travis Fischer'
 export const twitter = 'transitive_bs'
