@@ -1,0 +1,21 @@
+.metaballVisualization {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 480px;
+  max-height: 4096px;
+}
+
+.metaballVisualization canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+}
