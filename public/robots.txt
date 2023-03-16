@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /api/auth
-Disallow: /api/titles/search
-Disallow: /api/titles/next
+Disallow: /api/*
