@@ -14,7 +14,9 @@ import styles from './index.module.css'
 
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
 
-export default function HomePage(discordInfo: { discordInfo: { members: string; currentlyOnline: string } }) {
+export default function HomePage(discordInfo: {
+  discordInfo: { members: string; currentlyOnline: string }
+}) {
   const [hasMounted, setHasMounted] = React.useState(false)
   React.useEffect(() => {
     setHasMounted(true)
@@ -49,7 +51,8 @@ export default function HomePage(discordInfo: { discordInfo: { members: string; 
                 Join the Discord
               </Button>
               <p className={styles.discordInfo}>
-                Discord Members: {discordInfo.discordInfo.members}<br />
+                Discord Members: {discordInfo.discordInfo.members}
+                <br />
                 Currently Online: {discordInfo.discordInfo.currentlyOnline}
               </p>
             </div>
@@ -61,9 +64,11 @@ export default function HomePage(discordInfo: { discordInfo: { members: string; 
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://discord.com/api/v9/invites/5A896vcp?with_counts=true&with_expiration=true')
+  const res = await fetch(
+    'https://discord.com/api/v9/invites/5A896vcp?with_counts=true&with_expiration=true'
+  )
   const response = await res.json()
-  const members = response.approximate_member_count;
+  const members = response.approximate_member_count
   const discordInfo = {
     members: response.approximate_member_count,
     currentlyOnline: response.approximate_presence_count
@@ -71,6 +76,6 @@ export async function getStaticProps() {
   return {
     props: {
       discordInfo
-    },
+    }
   }
 }
