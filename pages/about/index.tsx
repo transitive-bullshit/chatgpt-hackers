@@ -20,7 +20,7 @@ Our community's grown rapidly over the past few months, and we now have over 700
 ## Admins
 
 - [Travis Fischer aka transitive-bullshit](https://twitter.com/transitive_bs) - [github](https://github.com/transitive-bullshit), [twitter](https://twitter.com/transitive_bs), [linkedin](https://www.linkedin.com/in/fisch2/)
-- [Antonio Cheung aka acheong08](https://twitter.com/GodlyIgnorance) - [github](https://github.com/acheong08), [twitter](https://twitter.com/GodlyIgnorance), [linkedin](https://www.linkedin.com/in/acheong08/)
+- [Antonio Cheong aka acheong08](https://twitter.com/GodlyIgnorance) - [github](https://github.com/acheong08), [twitter](https://twitter.com/GodlyIgnorance), [linkedin](https://www.linkedin.com/in/acheong08/)
 - [Joel Zhang aka waylaidwanderer](https://twitter.com/TheCodeOfJoel) - [github](https://github.com/waylaidwanderer), [twitter](https://twitter.com/TheCodeOfJoel), [linkedin](https://www.linkedin.com/in/joelczhang/)
 - [Rawand Ahmed Shaswar aka rawa](https://twitter.com/RawandShaswar) - [github](https://github.com/rawandahmad698), [twitter](https://twitter.com/RawandShaswar), [linkedin](https://www.linkedin.com/in/rawand-ahmed-shaswar-39a945215/)
 
