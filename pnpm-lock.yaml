@@ -13,6 +13,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-next: 13.2.4
   framer-motion: ^10.4.0
+  human-number: ^2.0.1
   husky: ^8.0.2
   lint-staged: ^13.2.0
   next: 13.2.4
@@ -41,6 +42,7 @@ specifiers:
 dependencies:
   clsx: 1.2.1
   framer-motion: 10.4.0_biqbaboplfbrettd7655fr4n2y
+  human-number: 2.0.1
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
   raf: 3.4.1
   random: 4.1.0
@@ -2028,6 +2030,13 @@ packages:
     resolution: {integrity: sha512-SQdIvTTtnHAx72xGUIUudvVOCjeWvV1U7rvSFnNGxTGRw3ZC7RES4Gw6dm1nMYD60TXvm6zjk/bWqgNc5pjQaw==}
     dev: false
 
+  /human-number/2.0.1:
+    resolution: {integrity: sha512-0ibkHNHQXLiI4Exiu9Cm2EhnrBOSEt4kHRxbKhmM41rbjCIlfd35PdNptEbHohnKkqmJt6q+Z9X8A1WcDCeuNg==}
+    engines: {node: '>= 8'}
+    dependencies:
+      round-to: 5.0.0
+    dev: false
+
   /human-signals/4.3.0:
     resolution: {integrity: sha512-zyzVyMjpGBX2+6cDVZeFPCdtOtdsxOeseRhB9tkQ6xXmGUNrcnBzdEKPy3VPNYz+4gy1oukVOXcrJCunSyc6QQ==}
     engines: {node: '>=14.18.0'}
@@ -3647,6 +3656,11 @@ packages:
     dependencies:
       glob: 7.2.3
     dev: true
+
+  /round-to/5.0.0:
+    resolution: {integrity: sha512-i4+Ntwmo5kY7UWWFSDEVN3RjT2PX1FqkZ9iCcAO3sKML3Ady9NgsjM/HLdYKUAnrxK4IlSvXzpBMDvMHZQALRQ==}
+    engines: {node: '>=10'}
+    dev: false
 
   /rtl-css-js/1.16.1:
     resolution: {integrity: sha512-lRQgou1mu19e+Ya0LsTvKrVJ5TYUbqCVPAiImX3UfLTenarvPUl1QFdvu5Z3PYmHT9RCcwIfbjRQBntExyj3Zg==}

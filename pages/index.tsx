@@ -1,5 +1,6 @@
 import * as React from 'react'
 import cs from 'clsx'
+// import humanizeNumber from 'human-number'
 import { Source_Code_Pro } from 'next/font/google'
 
 import * as config from '@/lib/config'
@@ -14,8 +15,12 @@ import styles from './index.module.css'
 
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
 
-export default function HomePage(discordInfo: {
-  discordInfo: { members: string; currentlyOnline: string }
+export default function HomePage({
+  numMembers,
+  numMembersOnline
+}: {
+  numMembers: string
+  numMembersOnline: string
 }) {
   const [hasMounted, setHasMounted] = React.useState(false)
   React.useEffect(() => {
@@ -43,6 +48,12 @@ export default function HomePage(discordInfo: {
                 who are building at the cutting edge of AI
               </p>
 
+              <div className={styles.discordInfo}>
+                <p>Discord Members: {numMembers}</p>
+
+                <p>Currently Online: {numMembersOnline}</p>
+              </div>
+
               <Button
                 href={config.discordUrl}
                 target='_blank'
@@ -50,11 +61,6 @@ export default function HomePage(discordInfo: {
               >
                 Join the Discord
               </Button>
-              <p className={styles.discordInfo}>
-                Discord Members: {discordInfo.discordInfo.members}
-                <br />
-                Currently Online: {discordInfo.discordInfo.currentlyOnline}
-              </p>
             </div>
           </div>
         </div>
@@ -64,18 +70,28 @@ export default function HomePage(discordInfo: {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    'https://discord.com/api/v9/invites/5A896vcp?with_counts=true&with_expiration=true'
-  )
-  const response = await res.json()
-  const members = response.approximate_member_count
-  const discordInfo = {
-    members: response.approximate_member_count,
-    currentlyOnline: response.approximate_presence_count
+  let numMembers = 7300
+  let numMembersOnline = 100
+
+  try {
+    const discordInviteCode = config.discordUrl.split('/').pop()
+    const res = await fetch(
+      `https://discord.com/api/v9/invites/${discordInviteCode}?with_counts=true&with_expiration=true`
+    )
+
+    const response = await res.json()
+    numMembers = parseInt(response.approximate_member_count) || 7300
+    numMembersOnline = parseInt(response.approximate_presence_count) || 100
+  } catch (err) {
+    console.error('error fetching discord info', err)
   }
+
   return {
     props: {
-      discordInfo
-    }
+      numMembers,
+      numMembersOnline
+    },
+    // update counts lazily at most every 10 minutes (in seconds)
+    revalidate: 10 * 60
   }
 }
