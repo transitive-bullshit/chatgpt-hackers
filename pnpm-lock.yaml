@@ -8,7 +8,6 @@ specifiers:
   '@types/react-dom': 18.0.11
   '@types/three': ^0.149.0
   '@vercel/analytics': ^0.1.11
-  add: ^2.0.6
   autoprefixer: ^10.4.14
   clsx: ^1.2.1
   eslint: 8.36.0
@@ -41,7 +40,6 @@ specifiers:
   unstated-next: ^1.1.0
 
 dependencies:
-  add: 2.0.6
   clsx: 1.2.1
   framer-motion: 10.4.0_biqbaboplfbrettd7655fr4n2y
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
@@ -656,10 +654,6 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
-
-  /add/2.0.6:
-    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
-    dev: false
 
   /aggregate-error/3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}

@@ -21,7 +21,6 @@
     "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check"
   },
   "dependencies": {
-    "add": "^2.0.6",
     "clsx": "^1.2.1",
     "framer-motion": "^10.4.0",
     "next": "13.2.4",
