@@ -15,7 +15,7 @@ When ChatGPT launched at the end of 2022, the world changed for some of us. With
 
 Since then, tens of thousands of developers have used our open source libraries to build amazing projects, bots, extensions, experiments, and products. We've honestly been blown away by the creativity and passion of the community, and so we decided to create a [Discord server](${config.discordUrl}) to help bring everyone together.
 
-Our community's grown rapidly over the past few months, and we now have over 7000 members. We're a group of developers, researchers, hackers, and AI enthusiasts who are all excited about building at the cutting edge of AI. Open source is also very much at the heart of what we do, and our community members are always building fun / crazy / useful OSS projects that push the boundaries of what's possible with the latest advances in AI.
+Our community's grown rapidly over the past few months, and we now have **over 7000 members**. We're a group of developers, researchers, hackers, and AI enthusiasts who are all excited about building at the cutting edge of AI. Open source is also very much at the heart of what we do, and our community members are always building fun / crazy / useful OSS projects that push the boundaries of what's possible with the latest advances in AI.
 
 ## Admins
 
@@ -76,6 +76,8 @@ Here's just a few of the amazing OSS projects that have been built by our commun
   - All-in-one chatbot client
 
 ## License
+
+NOTE: this community is not affiliated with OpenAI in any way.
 
 This website is [open source](${config.githubRepoUrl}). MIT © [${config.author}](${config.twitterUrl})
 `
