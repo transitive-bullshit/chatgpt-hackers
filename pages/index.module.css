@@ -55,6 +55,10 @@
   line-height: 1.6;
 }
 
+.discordInfo {
+  text-align: center;
+}
+
 .reverse {
   display: inline-block;
   transform: translateX(0.05em) scaleX(-1);
