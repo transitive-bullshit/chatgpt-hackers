@@ -1,4 +1,3 @@
-import raf from 'raf'
 import random from 'random'
 import {
   Mesh,
@@ -175,7 +174,7 @@ void main(){
 
   pause() {
     if (this._rafHandle) {
-      raf.cancel(this._rafHandle)
+      cancelAnimationFrame(this._rafHandle)
       this._rafHandle = null
     }
   }
@@ -184,7 +183,7 @@ void main(){
     this.update()
     this.render()
 
-    this._rafHandle = raf(this.animate.bind(this))
+    this._rafHandle = requestAnimationFrame(this.animate.bind(this))
   }
 
   onResize = () => {

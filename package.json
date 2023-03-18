@@ -32,7 +32,14 @@
     "react-dom": "18.2.0",
     "react-powerglitch": "^1.0.0",
     "react-use": "^17.4.0",
+    "rehype-format": "^4.0.1",
+    "rehype-raw": "^6.1.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
     "three": "^0.150.1",
+    "unified": "^10.1.2",
     "unstated-next": "^1.1.0"
   },
   "devDependencies": {

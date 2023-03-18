@@ -19,17 +19,20 @@ type ActiveLinkProps = LinkProps & {
  * Link that will be disabled if the target `href` is the same as the current
  * route's pathname.
  */
-export const ActiveLink = ({
-  children,
-  href,
-  style,
-  className,
-  activeClassName,
-  onClick,
-  prefetch,
-  compare = (a, b) => a === b,
-  ...props
-}: ActiveLinkProps) => {
+export const ActiveLink = React.forwardRef(function ActiveLink(
+  {
+    children,
+    href,
+    style,
+    className,
+    activeClassName,
+    onClick,
+    prefetch,
+    compare = (a, b) => a === b,
+    ...props
+  }: ActiveLinkProps,
+  ref
+) {
   const pathname = usePathname()
   const [disabled, setDisabled] = React.useState(false)
 
@@ -73,8 +76,9 @@ export const ActiveLink = ({
       prefetch={disabled ? false : prefetch}
       style={styleOverride}
       onClick={onClickOverride}
+      ref={ref as any}
     >
       {children}
     </Link>
   )
-}
+})

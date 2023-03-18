@@ -1,6 +1,7 @@
 import * as React from 'react'
 import cs from 'clsx'
 import Link from 'next/link'
+import { useGlitch } from 'react-powerglitch'
 
 import * as config from '@/lib/config'
 import { ActiveLink } from '@/components/ActiveLink/ActiveLink'
@@ -10,6 +11,10 @@ import { Logo } from './Logo'
 import styles from './styles.module.css'
 
 export const Header: React.FC<{ className?: string }> = ({ className }) => {
+  const glitch = useGlitch({
+    playMode: 'hover'
+  })
+
   return (
     <header className={cs(styles.header, className)}>
       <div className={styles.navHeader}>
@@ -18,13 +23,14 @@ export const Header: React.FC<{ className?: string }> = ({ className }) => {
         </Link>
 
         <div className={styles.rhs}>
-          {/* <ActiveLink
+          <ActiveLink
             href='/about'
             className={styles.action}
             activeClassName={styles.active}
+            ref={glitch.ref}
           >
             About
-          </ActiveLink> */}
+          </ActiveLink>
 
           <a
             className={cs(styles.discord, styles.social)}
