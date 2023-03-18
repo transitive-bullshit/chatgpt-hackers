@@ -25,7 +25,7 @@ export default function HomePage() {
       <Layout>
         <PageHead />
 
-        {/* {hasMounted && <MetaballVisualization />} */}
+        {hasMounted && <MetaballVisualization />}
 
         <div className={styles.homePage}>
           <div className={styles.body}>
