@@ -9,20 +9,21 @@ export const Button: React.FC<
     buttonClassName?: string
     children: React.ReactNode
     isLoading?: boolean
+    ref?: any
   } & React.AnchorHTMLAttributes<HTMLAnchorElement>
-> = ({
-  className,
-  buttonClassName,
-  children,
-  style,
-  isLoading,
-  ...buttonProps
-}) => {
+> = React.forwardRef(function Button(
+  { className, buttonClassName, children, style, isLoading, ...buttonProps },
+  ref
+) {
   return (
-    <div className={cs(styles.buttonWrapper, className)} style={style}>
+    <div
+      className={cs(styles.buttonWrapper, className)}
+      style={style}
+      ref={ref as any}
+    >
       <a className={cs(styles.button, buttonClassName)} {...buttonProps}>
         <div className={styles.buttonContent}>{children}</div>
       </a>
     </div>
   )
-}
+})

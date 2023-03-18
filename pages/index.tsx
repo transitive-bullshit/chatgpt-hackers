@@ -25,13 +25,15 @@ export default function HomePage() {
       <Layout>
         <PageHead />
 
-        {hasMounted && <MetaballVisualization />}
+        {/* {hasMounted && <MetaballVisualization />} */}
 
         <div className={styles.homePage}>
           <div className={styles.body}>
             <div className={cs(styles.section, styles.hero)}>
               <h1 className={cs(styles.title, sourceCodePro.className)}>
-                CHATGPT HAC<span className={styles.reverse}>K</span>ERS
+                CHATGPT HAC
+                <span className={styles.reverse}>K</span>
+                ERS
               </h1>
 
               <p className={styles.desc}>

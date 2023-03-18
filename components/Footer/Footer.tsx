@@ -1,5 +1,8 @@
+'use client'
+
 import * as React from 'react'
 import cs from 'clsx'
+import { useGlitch } from 'react-powerglitch'
 
 import * as config from '@/lib/config'
 import { Discord, GitHub, Twitter } from '@/icons/index'
@@ -7,10 +10,17 @@ import { Discord, GitHub, Twitter } from '@/icons/index'
 import styles from './styles.module.css'
 
 export const Footer: React.FC<{ className?: string }> = ({ className }) => {
+  const glitch = useGlitch({ playMode: 'hover' })
+
   return (
     <footer className={cs(styles.footer, className)}>
       <div className={styles.copyright}>
-        <a href={config.twitterUrl} target='_blank' rel='noopener noreferrer'>
+        <a
+          href={config.twitterUrl}
+          target='_blank'
+          rel='noopener noreferrer'
+          ref={glitch.ref}
+        >
           {config.copyright}
         </a>
       </div>

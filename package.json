@@ -21,13 +21,16 @@
     "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check"
   },
   "dependencies": {
+    "add": "^2.0.6",
     "clsx": "^1.2.1",
     "framer-motion": "^10.4.0",
     "next": "13.2.4",
+    "pnpm": "^7.29.3",
     "raf": "^3.4.1",
     "random": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-powerglitch": "^1.0.0",
     "react-use": "^17.4.0",
     "three": "^0.150.1",
     "unstated-next": "^1.1.0"
