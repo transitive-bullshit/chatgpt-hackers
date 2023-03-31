@@ -24,10 +24,6 @@ Our community's grown rapidly over the past few months, and we now have **over 7
 - [Joel Zhang aka waylaidwanderer](https://twitter.com/TheCodeOfJoel) - [github](https://github.com/waylaidwanderer), [twitter](https://twitter.com/TheCodeOfJoel), [linkedin](https://www.linkedin.com/in/joelczhang/)
 - [Rawand Ahmed Shaswar aka rawa](https://twitter.com/RawandShaswar) - [github](https://github.com/rawandahmad698), [twitter](https://twitter.com/RawandShaswar), [linkedin](https://www.linkedin.com/in/rawand-ahmed-shaswar-39a945215/)
 
-## Active Members
-
-If you're a community member and want to be added to this section, [create a PR](https://github.com/transitive-bullshit/chatgpt-hackers) following the above format. We'll prioritize active members of the community who contribute to conversations and related open source projects.
-
 ## Selected OSS AI Projects
 
 Here's just a few of the amazing OSS projects that have been built by our community members. If you're a member of our community and you build something cool with AI, [create a PR](https://github.com/transitive-bullshit/chatgpt-hackers), and we'll add it to the list!
