@@ -62,6 +62,8 @@ Here's just a few of the amazing OSS projects that have been built by our commun
 
 ### Applications
 
+- [Ben's Bites AI Search](https://github.com/transitive-bullshit/bens-bites-ai-search) [![](https://img.shields.io/github/stars/transitive-bullshit/bens-bites-ai-search?style=social)](https://github.com/transitive-bullshit/bens-bites-ai-search)
+  - AI search for all the best resources in AI – powered by Ben's Bites 💯
 - [PandoraAI](https://github.com/waylaidwanderer/PandoraAI) [![](https://img.shields.io/github/stars/waylaidwanderer/PandoraAI?style=social)](https://github.com/waylaidwanderer/PandoraAI)
   - Web chat client powered by [node-chatgpt-api](https://github.com/waylaidwanderer/node-chatgpt-api), allowing users to easily chat with multiple AI systems while also offering support for custom presets
   - With its seamless and convenient design, PandoraAI provides an engaging conversational AI experience
