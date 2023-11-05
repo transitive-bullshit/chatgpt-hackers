@@ -9,8 +9,8 @@ import { Button } from '@/components/Button/Button'
 import { Layout } from '@/components/Layout/Layout'
 import { MetaballVisualization } from '@/components/MetaballVisualization/MetaballVisualization'
 import { PageHead } from '@/components/PageHead/PageHead'
+import WebGLSupportChecker from '@/components/WebGLSupportChecker'
 import { Metaballs } from '@/store/metaballs'
-import WebGLSupportChecker from '@/components/WebGLSupportChecker';
 
 import styles from './index.module.css'
 
@@ -33,9 +33,14 @@ export default function HomePage({
       <Layout>
         <PageHead />
 
-         {hasMounted && (
-          <WebGLSupportChecker 
-            fallback={<p>WebGL is not supported in your browser. Visualization is disabled.</p>}
+        {hasMounted && (
+          <WebGLSupportChecker
+            fallback={
+              <p>
+                WebGL is not supported in your browser. Visualization is
+                disabled.
+              </p>
+            }
           >
             <MetaballVisualization />
           </WebGLSupportChecker>

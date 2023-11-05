@@ -67,7 +67,9 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  transition: backgrond-color 200ms ease-in, color 200ms ease-in;
+  transition:
+    backgrond-color 200ms ease-in,
+    color 200ms ease-in;
 }
 
 .icon {
@@ -84,7 +86,9 @@
 
 .action:not(.active):hover,
 .action:not(.active):focus {
-  transition: backgrond-color 50ms ease-in, color 50ms ease-in;
+  transition:
+    backgrond-color 50ms ease-in,
+    color 50ms ease-in;
   background-color: var(--bg-color-0);
 }
 
