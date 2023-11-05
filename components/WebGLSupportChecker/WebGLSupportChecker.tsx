@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const WebGLSupportChecker: React.FC<{ fallback: React.ReactNode }> = ({
+interface WebGLSupportCheckerProps {
+  children: ReactNode
+  fallback: ReactNode
+}
+
+const WebGLSupportChecker: React.FC<WebGLSupportCheckerProps> = ({
   children,
   fallback
 }) => {
